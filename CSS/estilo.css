@@ -1,0 +1,400 @@
+/*ESTILO GERAL*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(
+        to top right, 
+        #24252a 33%,
+        rgb(0,123,255));
+    background-attachment: fixed; /* Faz o gradiente permanecer fixo na tela */
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+/*ESTILO DO CABEÇALHO*/
+header{
+    padding: 0.4rem 3rem;
+    display: flex;
+    align-items: center;
+    background-color: #24252a;
+    box-shadow: 3px 8px 15px #464646;
+    padding-left: 50px;
+    @media screen and (max-width: 1020px){
+        flex-direction: column;
+        font-size: 10px;
+    }
+}
+
+nav{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo{
+    margin-left: 4%;
+    display: flex;
+    align-items: center;
+}
+
+.logo span{
+    padding: 1.5%;
+    font-size: 33px;
+    font-style: italic;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item{
+    margin: 0 15px;
+}
+
+.nav-link{
+    display: block;
+    border: 0;
+    text-decoration: none;
+    font-size: 13.6px;
+    font-style: italic;
+    color: #ffffff;
+    font-weight: 400;
+    border-radius: 30px;
+    transition: 0.6s;
+}
+
+.nav-link:hover{
+    border-radius: 52px;
+    background-color: rgb(0,123,255);
+    transform: scale(1.08);
+}
+
+header .contato button{
+    padding: 8px 17px;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    color: #ffffff;
+    background-color: rgb(0,123,255);
+    border: 0;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+/*ESTILO DO TOPO DO SITE*/
+div.topo{
+    padding: 40px 4%;
+    font-style: italic;
+}
+
+div.topo .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.topo .txt-topo h1, h2{
+    color: #ffffff;
+    font-size: 35px;
+    line-height: 40px;
+}
+.topo .txt-topo p{
+   margin: 40px 0px;
+}
+
+.topo .img-topo img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    border-radius: 28%;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+ /*CORPO DO SITE*/
+.pessoais{
+    border: 1px groove #464646;
+    box-shadow: 3px 8px 15px #464646;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    margin-left: 15%;
+    margin-right: 15%;
+    h2{
+        text-align: center;
+        font-size: 33px;
+        color: #9c9c9c;
+        margin-top: 0.8%;
+        font-style: italic;
+    }
+    p{
+        margin: 1%;
+    }
+}
+
+.formação{
+    border: 1px groove #464646;
+    box-shadow: 3px 8px 15px #464646;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    margin-left: 15%;
+    margin-right: 15%;
+    h2{
+        font-size: 33px;
+        color: #9c9c9c;
+        margin-top: 0.8%;
+        font-style: italic;
+        text-align: center;
+    }
+    h3{
+        margin: 1%;
+        font-size: 23px;
+        color: #9c9c9c;
+        margin-top: 0.8%;
+        font-style: italic;
+    }
+    h4{
+        margin: 1%;
+        font-size: 23px;
+        color: #9c9c9c;
+        margin-top: 0.8%;
+        font-style: italic;
+    }
+    h5{
+        margin: 1%;
+        font-size: 23px;
+        color: #9c9c9c;
+        margin-top: 0.8%;
+        font-style: italic;
+    }
+    h6{
+        margin: 1%;
+        font-size: 23px;
+        color: #9c9c9c;
+        margin-top: 0.8%;
+        font-style: italic;
+    }
+    p{
+        margin: 1%;
+    }
+    
+}
+
+.experiencia{
+    border: 1px groove #464646;
+    box-shadow: 3px 8px 15px #464646;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    margin-left: 15%;
+    margin-right: 15%;
+    h2{
+        text-align: center;
+        font-size: 33px;
+        color: #9c9c9c;
+        margin-top: 0.8%;
+        font-style: italic;
+    }
+    p{
+        margin: 1%;
+    }
+}
+
+.habilidades{
+    border: 1px groove #464646;
+    box-shadow: 3px 8px 15px #464646;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    margin-left: 15%;
+    margin-right: 15%;
+    h2{
+        text-align: center;
+        font-size: 33px;
+        color: #9c9c9c;
+        margin-top: 0.8%;
+        font-style: italic;
+    }
+    p{
+        margin: 1%;
+    }
+}
+
+.contatos{
+    text-align: center;
+    border: 1px groove #464646;
+    box-shadow: 3px 8px 15px #464646;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    margin-left: 15%;
+    margin-right: 15%;
+    h2{
+        font-size: 33px;
+        color: #9c9c9c;
+        margin-top: 0.8%;
+        font-style: italic;
+    }
+    p{
+        margin: 1%;
+    }
+
+}
+
+.contato .fa-brands{
+    margin: 1%;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a i{
+    margin: 0.8%;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+/* RODAPÉ */
+footer{
+    margin-top: 5%;
+    padding: 40px 4%;
+    box-shadow: 0px 0px 40px 10px #464646;  
+}
+
+footer .flex{
+    justify-content: space-between;  
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 2px solid rgb(0,123,255);
+}
+
+footer .logo-footer{
+    margin-left: 42%;
+    display: flex;
+    align-items: center; 
+}
+
+footer .logo-footer span{
+    margin-left: 5%;
+    padding: 1.5%;
+    font-size: 43px;
+    font-style: italic;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1020px){
+    /*GERAIS*/
+    .flex{
+        flex-direction: column;
+    }
+
+    /*TOPO DO SITE*/
+    section.topo{
+        padding: 20px 8%;
+    }
+
+    section.topo .flex{
+        gap: 40px;
+    }
+
+    .topo .txt-topo h1, h2{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    
+    .topo .img-topo img{
+        width: 100%;
+    }
+
+    /*CORPO DO SITE*/
+    .pessoais{
+        margin-top: 5%;
+        h2{
+            margin-top: 5%;
+        }
+        p{
+            margin: 2.4%;
+        }
+    }
+
+    .formação{
+        margin-top: 5%;
+        h2, h3, h4, h5, h6{
+            margin: 5%;
+        }
+        p{
+            margin: 5%;
+        }
+    }
+
+    .experiencia{
+        margin-top: 5%;
+        h2{
+            margin: 5%;
+        }
+        p{
+            margin: 2.4%;
+        }
+    }
+    
+    .habilidades{
+        margin-top: 5%;
+        h2{
+            margin: 5%;
+        }
+        p{
+            margin: 2.4%;
+        }
+    }
+
+    .contatos{
+        margin-top: 5%;
+        h2{
+            margin: 5%;
+        }
+        p{
+            margin: 2.4%;
+        }
+    }
+
+    /*RODAPÉ*/
+    footer .flex{
+        flex-direction: column;
+    }
+
+    footer .logo-footer{
+        margin-left: 26%;
+    }
+}
